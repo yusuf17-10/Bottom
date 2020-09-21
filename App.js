@@ -3,9 +3,10 @@ import Fb from './screens/Fb';
 import In from './screens/In';
 import { createAppContainer} from 'react-navigation'; 
 import {createBottomTabNavigator} from 'react-navigation-tabs';
+import {StyleSheet} from 'react-native';
 
 
-export default class App extends React.Component() {
+export default class App extends React.Component {
   render(){
     return(
     <AppContainer/>
@@ -14,9 +15,8 @@ export default class App extends React.Component() {
 }
 
 const TabNavigator = createBottomTabNavigator({
-    Fb:{screen:FbScreen},
-    In:{screen:InScreen},
-
+  Fb:{screen:Fb},
+  In:{screen:In},
 
 
 });
